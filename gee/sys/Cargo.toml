@@ -1,0 +1,36 @@
+[package]
+name = "gee-sys"
+version = "0.1.0"
+authors = ["Jean Pierre Dudey <me@jeandudey.tech>"]
+edition = "2018"
+build = "build.rs"
+[package.metadata.system-deps."gee-0.8"]
+version = "0.20"
+
+[package.metadata.system-deps.gee_0_8]
+name = "gee-0.8"
+version = "0.20"
+[package.metadata.docs.rs]
+features = ["dox"]
+
+[dependencies]
+libc = "0.2"
+
+[dependencies.glib-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.gobject-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.gio-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[build-dependencies]
+system-deps = "2.0"
+
+[dev-dependencies]
+shell-words = "1.0.0"
+tempfile = "3"
+
+[features]
+dox = []

@@ -1,0 +1,25 @@
+[options]
+girs_dir = "../gir-files"
+library = "Gee"
+version = "0.8"
+min_cfg_version = "0.20.0"
+target_path = "."
+work_mode = "normal"
+
+external_libraries = [
+    "GLib",
+    "GObject",
+    "Gio",
+]
+
+generate = [
+    "Gee.Collection",
+    "Gee.BidirIterator",
+    "Gee.Deque",
+    "Gee.Hashable",
+    "Gee.Iterator",
+    "Gee.Future",
+    "Gee.Lazy",
+    "Gee.Queue",
+    "Gee.Set",
+]

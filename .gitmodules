@@ -1,0 +1,4 @@
+[submodule "gir-files"]
+	path = gir-files
+	url = https://github.com/jeandudey/gir-files
+	branch = granite-rs

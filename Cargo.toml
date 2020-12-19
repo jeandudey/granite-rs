@@ -1,0 +1,7 @@
+[workspace]
+members = [
+    "gee",
+    "gee/sys",
+    "granite",
+    "granite/sys",
+]

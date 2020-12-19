@@ -1,0 +1,51 @@
+[package]
+name = "granite-sys"
+version = "0.1.0"
+authors = ["Jean Pierre Dudey <me@jeandudey.tech>"]
+edition = "2018"
+build = "build.rs"
+[package.metadata.system-deps.granite]
+name = "granite"
+version = "5.5"
+[package.metadata.docs.rs]
+features = ["dox"]
+
+[dependencies]
+libc = "0.2"
+
+[dependencies.gee-sys]
+path = "../../gee/sys"
+
+[dependencies.glib-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.gobject-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.gdk-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.gdk-pixbuf-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.gtk-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.gio-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.pango-sys]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[dependencies.cairo-sys-rs]
+git = "https://github.com/gtk-rs/gtk-rs"
+
+[build-dependencies]
+system-deps = "2.0"
+
+[dev-dependencies]
+shell-words = "1.0.0"
+tempfile = "3"
+
+[features]
+dox = []

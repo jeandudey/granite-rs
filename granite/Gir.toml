@@ -1,0 +1,24 @@
+[options]
+girs_dir = "../gir-files"
+library = "Granite"
+version = "1.0"
+min_cfg_version = "5.5"
+target_path = "."
+work_mode = "normal"
+
+external_libraries = [
+    "GLib",
+    "GObject",
+    "Gio",
+    "Gee",
+    "Gdk",
+    "GdkPixbuf",
+    "Gtk",
+    "Pango",
+    "Cairo",
+]
+
+generate = [
+    "Granite.Application",
+    "Granite.WidgetsWelcome",
+]

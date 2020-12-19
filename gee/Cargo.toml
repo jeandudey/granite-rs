@@ -1,0 +1,9 @@
+[package]
+name = "gee"
+version = "0.1.0"
+authors = ["Jean Pierre Dudey <me@jeandudey.tech>"]
+edition = "2018"
+
+[dependencies]
+glib = { git = "https://github.com/gtk-rs/gtk-rs" }
+ffi = { package = "gee-sys", path = "sys" }
