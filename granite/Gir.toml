@@ -5,6 +5,7 @@ version = "1.0"
 min_cfg_version = "5.5"
 target_path = "."
 work_mode = "normal"
+deprecate_by_min_version = true
 
 external_libraries = [
     "GLib",
@@ -20,5 +21,9 @@ external_libraries = [
 
 generate = [
     "Granite.Application",
+]
+
+manual = [
+    "Granite.HeaderLabel",
     "Granite.WidgetsWelcome",
 ]
